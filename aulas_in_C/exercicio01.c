@@ -1,11 +1,13 @@
 #include <stdio.h>
 
 int main(){
-      int n1, n2;
-      printf("Informe o primeiro valor: ");
-      scanf("%d", &n1);
-      printf("Informe o segundo valor: ");
-      scanf("%d", &n2);
-      printf("A soma entre %d e %d, vale: %d.\n", n1, n2, n1 + n2);
+      float salary, aumento, salary_final;
+      printf("Informe seu salario: R$");
+      scanf("%f", &salary);
+      printf("Informe o aumento em %%: -> ");
+      scanf("%f", &aumento);
+      salary_final = salary + ((salary * aumento) / 100);
+      printf("O seu salario antigo era: R$%.2f reais.\n", salary);
+      printf("Apos ganha %.2f%% de aumento, vale: R$%.2f reais.\n", aumento, salary_final);
       return 0;
 }
